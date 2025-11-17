@@ -8,8 +8,9 @@
 body {
     font-family: Arial, sans-serif;
     background: #f2f2f2;
-    padding-top: 100px; /* ruimte voor fixed header */
+    padding-top: 120px; /* ruimte voor fixed header */
     color: #111;
+    line-height: 1.5;
 }
 
 /* ===== Header ===== */
@@ -46,21 +47,28 @@ header nav a:hover {
     min-height: 400px;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 120px 20px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 15px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
 .hero p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .cta-btn {
@@ -98,13 +106,18 @@ header nav a:hover {
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .news-card img,
 .card img,
-.product-card img,
-.hero img {
+.product-card img {
     width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
     border-radius: 10px;
 }
 
@@ -128,7 +141,7 @@ header nav a:hover {
 /* ===== Review sectie ===== */
 .review {
     background: white;
-    padding: 40px;
+    padding: 40px 20px;
     margin: 20px;
     border-radius: 15px;
     text-align: center;
@@ -147,11 +160,9 @@ header nav a:hover {
 .contact-form {
     background: white;
     padding: 40px 20px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 15px;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .contact-form label {
@@ -247,5 +258,11 @@ footer {
     }
     .hero h2 {
         font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .trailer img {
+        max-width: 90%;
     }
 }
