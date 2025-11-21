@@ -9,6 +9,7 @@
     <script defer src="script.js"></script>
 </head>
 <body>
+
 <header>
     <nav class="navbar">
         <div class="logo">
@@ -23,7 +24,10 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="nav-right">
-            <input type="text" placeholder="Zoek games..." class="search-input">
+            <form id="searchForm">
+                <input type="text" placeholder="Zoek pagina..." class="search-input" id="searchInput">
+                <button type="submit">Zoek</button>
+            </form>
             <button id="darkmodeBtn">Dark mode</button>
         </div>
     </nav>
@@ -52,7 +56,8 @@
 </section>
 
 <footer>
-    <p>&copy; 2025 GameStars. Alle rechten voorbehouden.</p>
+    <p>GameStars &copy; 2025 – Bekijk onze merchandise of neem contact op via de contactpagina.</p>
 </footer>
+
 </body>
 </html>

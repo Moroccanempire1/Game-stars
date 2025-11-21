@@ -372,3 +372,84 @@ footer {
 .darkmode .order-btn {
     background: #005bb5;
 }
+
+/* Contact pagina */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.contact-container {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #0074FF;
+}
+
+.contact-container p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #0074FF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form .submit-btn:hover {
+    background: #005bb5;
+}
+
+/* Darkmode aanpassingen */
+.darkmode .contact-container {
+    background: #222;
+    color: #fff;
+}
+
+.darkmode .contact-form input,
+.darkmode .contact-form textarea {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.darkmode .submit-btn {
+    background: #005bb5;
+}
