@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // Modal open/close
 function openModal(id) {
@@ -18,4 +19,21 @@ function validateForm(e) {
     if(name === '' || email === '' || msg === '') { alert('Vul alle velden in'); return false; }
     alert('Bericht verzonden!');
     return true;
+=======
+let seizoen = "winter";
+
+switch (seizoen) {
+    case "lente":
+        console.log("Het is lente! De bloemen beginnen te bloeien.");
+        break;
+    case "zomer":
+        console.log("Het is zomer! Tijd voor het strand en de zon.");
+        break;
+    case "herfst":
+        console.log("Het is herfst! De bladeren veranderen van kleur.");
+        break;
+    default:
+        console.log("Het is winter! Tijd voor sneeuw en warme chocolademelk.");
+        break;
+>>>>>>> d857327 (ss)
 }
