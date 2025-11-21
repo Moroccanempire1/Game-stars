@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Ennes & Peter" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FC 26 - Home</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anass Maliki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStars - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigatiebar -->
     <header>
-      <h1>FC 26</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="games.html">Games</a>
-        <a href="merchandise.html">Merchandise</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+        <nav class="navbar">
+           <div class="logo">
+    <a href="index.html">
+        <img src="./images/logo gamstars.png" alt="GameStars Logo">
+    </a>
+</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Zoek games..." class="search-input">
+                <button id="darkmodeBtn">Dark mode</button>
+            </div>
+        </nav>
     </header>
 
+    <!-- Hero sectie -->
     <section class="hero">
-      <h2>Speel. Win. Domineer.</h2>
-      <p>FC 26 – De ultieme voetbalgameervaring</p>
-      <a class="cta-btn" href="#">Speel Nu</a>
+        <div class="hero-overlay">
+            <h1>Welkom bij GameStars</h1>
+            <p>Bekijk de nieuwste games, updates & merchandise.</p>
+            <a href="games.html" class="hero-btn">Bekijk games</a>
+        </div>
     </section>
 
-    <section class="news-grid">
-      <div class="news-card">Update 1</div>
-      <div class="news-card">Update 2</div>
-      <div class="news-card">Update 3</div>
+    <!-- Top games sectie -->
+    <section class="top-games">
+        <h2>Top 3 Games</h2>
+        <div class="game-cards">
+            <div class="card">
+                <img src="./images/fc26.avif" alt="FC 26">
+                <h3>FC 26</h3>
+            </div>
+            <div class="card">
+                <img src="./images/Rocket_League_coverart.jpg" alt="Rocket League">
+                <h3>Rocket League</h3>
+            </div>
+            <div class="card">
+                <img src="./images/valorant.jpeg" alt="Valorant">
+                <h3>Valorant</h3>
+            </div>
+        </div>
     </section>
 
-    <section class="community">
-      <h3>Word Lid van de Community</h3>
-      <p>Deel je scores en strategieën met andere spelers</p>
+    <!-- Social sectie -->
+    <section class="social">
+        <h2>Volg ons</h2>
+        <p>Email: info@gamestars.nl</p>
+        <p>Instagram: @GameStars</p>
     </section>
 
-    <footer>&copy; 2025 FC 26 | Alle rechten voorbehouden</footer>
-  </body>
+    <!-- Footer -->
+   <footer>
+    <p>&copy; 2025 GameStars. Alle rechten voorbehouden.</p>
+</footer>
+
+</body>
 </html>

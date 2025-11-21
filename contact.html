@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Ennes & Peter" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FC 26 - Contact</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>FC 26</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="games.html">Games</a>
-        <a href="merchandise.html">Merchandise</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anass Maliki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStars - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
 
-    <section class="contact-form">
-      <form>
-        <label>Naam:</label><input type="text" /><br />
-        <label>Email:</label><input type="email" /><br />
-        <label>Onderwerp:</label><input type="text" /><br />
-        <label>Bericht:</label><textarea></textarea><br />
-        <button class="btn" type="submit">Verstuur</button>
-      </form>
-    </section>
+<header>
+    <nav class="navbar">
+<div class="logo">
+    <a href="index.html">
+        <img src="/images/logo gamstars.png" alt="GameStars Logo">
+    </a>
+</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="merchandise.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <input type="text" placeholder="Zoek games..." class="search-input">
+            <button id="darkmodeBtn">Dark mode</button>
+        </div>
+    </nav>
+</header>
 
-    <footer>&copy; 2025 FC 26 | Alle rechten voorbehouden</footer>
-  </body>
+<section class="contact-page">
+    <h1>Contact</h1>
+
+    <form class="contact-form">
+        <label>Naam</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Bericht</label>
+        <textarea required></textarea>
+
+        <button type="submit">Versturen</button>
+    </form>
+
+</section>
+<footer>
+    <p>&copy; 2025 GameStars. Alle rechten voorbehouden.</p>
+</footer>
+
+</body>
 </html>
