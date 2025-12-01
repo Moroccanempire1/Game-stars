@@ -110,6 +110,7 @@ body {
 .top-games {
     padding: 40px 20px;
     text-align: center;
+    height: auto;
 }
 
 .top-games h2 {
@@ -120,6 +121,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+
 }
 
 .card {
@@ -137,6 +139,7 @@ body {
 .card img {
     width: 100%;
     border-radius: 10px;
+    height: 85%
 }
 
 .card h3 {
@@ -259,6 +262,7 @@ footer {
 .game-item img {
     width: 100%;
     display: block;
+    height: 80%;
 }
 
 .game-item h3 {
@@ -304,6 +308,7 @@ footer {
     padding: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    height: 80%;
 }
 
 .merch-item:hover {
@@ -315,6 +320,8 @@ footer {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+    height: 70%;
+    width: 100%;
 }
 
 .merch-item h3 {
