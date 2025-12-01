@@ -11,7 +11,9 @@
 <body>
 <header>
     <nav class="navbar">
-        <div class="logo"><a href="index.html"><img src="images/logo gamstars.png" alt="GameStars Logo"></a></div>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo gamstars.png" alt="GameStars Logo"></a>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="games.html">Games</a></li>
@@ -31,19 +33,22 @@
 </header>
 
 <section class="contact-page">
-    <h1>Contact</h1>
-    <form class="contact-form">
-        <label>Naam</label>
-        <input type="text" required>
+    <div class="contact-container">
+        <h1>Neem contact op</h1>
+        <p>Stuur ons een bericht voor vragen of suggesties!</p>
+        <form class="contact-form">
+            <label for="name">Naam</label>
+            <input type="text" id="name" required>
 
-        <label>Email</label>
-        <input type="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
 
-        <label>Bericht</label>
-        <textarea required></textarea>
+            <label for="message">Bericht</label>
+            <textarea id="message" required></textarea>
 
-        <button type="submit">Versturen</button>
-    </form>
+            <button type="submit" class="submit-btn">Versturen</button>
+        </form>
+    </div>
 </section>
 
 <footer>

@@ -28,6 +28,11 @@ body {
     font-weight: bold;
 }
 
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -63,6 +68,15 @@ body {
     outline: none;
 }
 
+.darkmode .navbar {
+    background: #222;
+}
+
+.darkmode .search-input {
+    background: #555;
+    color: #fff;
+}
+
 /* ===== Hero sectie ===== */
 .hero {
     position: relative;
@@ -77,9 +91,12 @@ body {
 
 .hero-overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    /* overlay voor leesbaarheid */
     padding: 40px 20px;
     border-radius: 10px;
+}
+
+.darkmode .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 {
@@ -110,7 +127,6 @@ body {
 .top-games {
     padding: 40px 20px;
     text-align: center;
-    height: auto;
 }
 
 .top-games h2 {
@@ -121,7 +137,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-
 }
 
 .card {
@@ -139,11 +154,17 @@ body {
 .card img {
     width: 100%;
     border-radius: 10px;
-    height: 85%
+    height: 85%;
 }
 
 .card h3 {
     margin-top: 10px;
+}
+
+/* Darkmode cards */
+.darkmode .card {
+    background: #333;
+    color: white;
 }
 
 /* ===== Social sectie ===== */
@@ -151,6 +172,11 @@ body {
     padding: 40px 20px;
     text-align: center;
     background: #f0f0f0;
+}
+
+.darkmode .social {
+    background: #222;
+    color: white;
 }
 
 .social h2 {
@@ -166,65 +192,170 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ===== Contactformulier ===== */
+.darkmode footer {
+    background: #222;
+}
+
+/* ===== Contactpagina ===== */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background: #f9f9f9;
+    min-height: calc(100vh - 120px);
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h1 {
+    font-size: 2.2rem;
+    color: #0074FF;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
 .contact-form {
-    width: 90%;
-    max-width: 400px;
-    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
 }
 
 .contact-form input,
-.contact-form textarea,
-.contact-form button {
-    padding: 10px;
-    border-radius: 5px;
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.2s, background 0.2s;
 }
 
-.contact-form button {
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #0074FF;
+    background: #f0f8ff;
+}
+
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-form .submit-btn {
     background: #0074FF;
     color: white;
     border: none;
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.2s;
 }
 
-.contact-form button:hover {
+.contact-form .submit-btn:hover {
+    background: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* Darkmode */
+.darkmode .contact-page {
+    background: #111;
+}
+
+.darkmode .contact-container {
+    background: #222;
+    color: #fff;
+}
+
+.darkmode .contact-form label {
+    color: #fff;
+}
+
+.darkmode .contact-form input,
+.darkmode .contact-form textarea {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.darkmode .contact-form input:focus,
+.darkmode .contact-form textarea:focus {
+    background: #444;
+    border-color: #1E90FF;
+}
+
+.darkmode .submit-btn {
     background: #005bb5;
 }
 
-/* ===== Darkmode aanpassingen ===== */
-.darkmode .navbar {
+.darkmode .submit-btn:hover {
+    background: #0074FF;
+}
+
+
+/* ===== Darkmode ===== */
+.darkmode .contact-page {
+    background: #111;
+}
+
+.darkmode .contact-container {
     background: #222;
+    color: #fff;
 }
 
-.darkmode .search-input {
-    background: #555;
-    color: white;
+.darkmode .contact-form label {
+    color: #fff;
 }
 
-.darkmode .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.darkmode .card {
+.darkmode .contact-form input,
+.darkmode .contact-form textarea {
     background: #333;
-    color: white;
+    color: #fff;
+    border: 1px solid #555;
 }
 
-.darkmode .social {
-    background: #222;
-    color: white;
+.darkmode .contact-form input:focus,
+.darkmode .contact-form textarea:focus {
+    background: #444;
+    border-color: #1E90FF;
 }
 
-.logo img {
-    height: 50px;
-    /* pas aan naar gewenste grootte */
-    width: auto;
+.darkmode .submit-btn {
+    background: #005bb5;
+}
+
+.darkmode .submit-btn:hover {
+    background: #0074FF;
 }
 
 /* ===== Games pagina ===== */
@@ -238,14 +369,12 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Grid voor games */
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 
-/* Game-item styling */
 .game-item {
     background: white;
     border-radius: 10px;
@@ -271,7 +400,6 @@ footer {
     font-weight: 600;
 }
 
-/* Darkmode */
 .darkmode .games-page {
     background: #111;
     color: #fff;
@@ -294,21 +422,18 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Grid layout voor merchandise items */
 .merch-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 
-/* Individueel merchandise-item */
 .merch-item {
     background: white;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    height: 80%;
 }
 
 .merch-item:hover {
@@ -321,7 +446,6 @@ footer {
     border-radius: 10px;
     margin-bottom: 15px;
     height: 70%;
-    width: 100%;
 }
 
 .merch-item h3 {
@@ -358,7 +482,6 @@ footer {
     background: #005bb5;
 }
 
-/* Darkmode merchandise */
 .darkmode .merch-page {
     background: #111;
     color: #fff;
@@ -380,104 +503,61 @@ footer {
     background: #005bb5;
 }
 
-/* Contact pagina */
-.contact-page {
-    display: flex;
-    justify-content: center;
-    padding: 60px 20px;
-    background: #f9f9f9;
-}
-
-.contact-container {
-    max-width: 500px;
-    width: 100%;
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+/* ===== Game Review pagina ===== */
+.game-review-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.contact-container h1 {
-    margin-bottom: 15px;
-    font-size: 2rem;
+.review-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: #0074FF;
 }
 
-.contact-container p {
-    margin-bottom: 30px;
-    color: #555;
+.review-card p {
+    margin: 5px 0;
 }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-    text-align: left;
+.switch-links {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-
-.contact-form .submit-btn {
-    width: 100%;
-    padding: 12px;
-    background: #0074FF;
-    color: white;
-    font-size: 1rem;
+.switch-links a {
+    text-decoration: none;
+    color: #0074FF;
     font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.2s;
+    margin: 0 10px;
+    transition: color 0.2s;
 }
 
-.contact-form .submit-btn:hover {
-    background: #005bb5;
+.switch-links a:hover {
+    color: #005bb5;
 }
 
-/* Darkmode aanpassingen */
-.darkmode .contact-container {
-    background: #222;
-    color: #fff;
-}
-
-.darkmode .contact-form input,
-.darkmode .contact-form textarea {
+.darkmode .review-card {
     background: #333;
     color: #fff;
-    border: 1px solid #555;
 }
 
-.darkmode .submit-btn {
-    background: #005bb5;
-}
-
-.review-content {
-    max-width: 900px;
-    margin: 40px auto;
-    text-align: center;
-    padding: 20px;
-}
-
-.review-box {
-    background: #ffffffdd;
-    padding: 25px;
-    border-radius: 12px;
-    margin-top: 20px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-    text-align: left;
-}
-
-.darkmode .review-box {
-    background: #222;
-    color: #fff;
+.darkmode .switch-links a {
+    color: #1E90FF;
 }
