@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Ennes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FC 26 - Merchandise</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="merchandise">
-    <header>
-      <h1>FC 26</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="games.html">Games</a>
-        <a href="merchandise.html">Merchandise</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anass Maliki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStars - Merchandise</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
 
-    <section class="product-grid">
-      <div class="product-card">
-        <img src=images/shirt.png alt="FC 26 Shirt" />
-        Shirt FC 26<br />€29,99 <a class="btn" href="#">Koop</a>
-      </div>
-      <div class="product-card">
-        <img src=images/hoodie.webp alt="FC 26 Hoodie" />
-        Hoodie<br />€49,99 <a class="btn" href="#">Koop</a>
-      </div>
-      <div class="product-card">
-        <img src=images/muts.jpg alt="FC 26 Muts" />
-        Muts<br />€14,99 <a class="btn" href="#">Koop</a>
-      </div>
-    </section>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./images/logo gamstars.png" alt="GameStars Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="merchandise.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <form id="searchForm">
+                <input type="text" placeholder="Zoek pagina..." class="search-input" id="searchInput">
+                <button type="submit">Zoek</button>
+            </form>
+            <button id="darkmodeBtn">Dark mode</button>
+        </div>
+    </nav>
+</header>
 
-    <footer>&copy; 2025 FC 26 | Alle rechten voorbehouden</footer>
-  </body>
+<section class="merch-page">
+    <h1>Merchandise</h1>
+    <div class="merch-grid">
+        <div class="merch-item">
+            <img src="/images/image copy 3.png" alt="T-shirt">
+            <h3>GameStars T-shirt</h3>
+            <label>Maat:</label>
+            <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+            </select>
+            <button class="order-btn">Bestellen</button>
+        </div>
+        <div class="merch-item">
+            <img src="/images/image copy 2.png" alt="Hoodie">
+            <h3>GameStars Hoodie</h3>
+            <label>Maat:</label>
+            <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+            </select>
+            <button class="order-btn">Bestellen</button>
+        </div>
+        <div class="merch-item">
+            <img src="./images/image copy 3.png" alt="Cap">
+            <h3>GameStars Cap</h3>
+            <label>Maat:</label>
+            <select>
+                <option>One Size</option>
+            </select>
+            <button class="order-btn">Bestellen</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>GameStars &copy; 2025 – Bestel je favoriete merchandise direct hier!</p>
+</footer>
+
+</body>
 </html>

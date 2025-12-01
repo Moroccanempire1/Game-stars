@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Peter" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FC 26 - Games</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="games">
-    <header>
-      <h1>FC 26</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="games.html">Games</a>
-        <a href="merchandise.html">Merchandise</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anass Maliki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStars - Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
 
-    <section class="grid">
-      <div class="card">
-        <img src=images/fifa_rivals.jpg alt="Fifa Rivals" />
-        <h3>PVP Mode</h3>
-        <a class="btn" href="#">Meer Info</a>
-      </div>
-      <div class="card">
-        <img src=images/career_mode.webp alt="Career Mode" />
-        <h3>Career Mode</h3>
-        <a class="btn" href="#">Meer Info</a>
-      </div>
-      <div class="card">
-        <img src=images/ultimate_team.jpeg alt="Ultimate Team" />
-        <h3>Ultimate Team</h3>
-        <a class="btn" href="#">Meer Info</a>
-      </div>
-      <div class="card">
-        <img src=images/leagues.jpeg alt="Online League" />
-        <h3>Online League</h3>
-        <a class="btn" href="#">Meer Info</a>
-      </div>
-    </section>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./images/logo gamstars.png" alt="GameStars Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="merchandise.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <form id="searchForm">
+                <input type="text" placeholder="Zoek pagina..." class="search-input" id="searchInput">
+                <button type="submit">Zoek</button>
+            </form>
+            <button id="darkmodeBtn">Dark mode</button>
+        </div>
+    </nav>
+</header>
 
-    <section class="trailer">
-      <h2>Bekijk de trailer</h2>
-      <p>Gameplay video preview hier</p>
-      <div class="trailer-container">
-        <iframe width="560" height="315"
-          src="https://www.youtube-nocookie.com/embed/TSi0iJYSQ24"
-          title="Game Trailer"
-          allowfullscreen
-          referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
-      </div>
-    </section>
+<section class="games-page">
+    <h1>Alle Games</h1>
+    <div class="games-grid">
+        <div class="game-item">
+            <img src="./images/fc26.avif" alt="FC 26">
+            <h3>FC 26</h3>
+        </div>
+        <div class="game-item">
+            <img src="./images/Rocket_League_coverart.jpg" alt="Rocket League">
+            <h3>Rocket League</h3>
+        </div>
+        <div class="game-item">
+            <img src="./images/valorant.jpeg" alt="Valorant">
+            <h3>Valorant</h3>
+        </div>
+        <div class="game-item">
+            <img src="./images/image.png" alt="Fortnite">
+            <h3>Fortnite</h3>
+        </div>
+    </div>
+</section>
 
-    <section class="review">
-      <h3>Gebruikersbeoordeling: ★★★★☆ 4.7</h3>
-    </section>
+<footer>
+    <p>GameStars &copy; 2025 – Bekijk onze merchandise of neem contact op via de contactpagina.</p>
+</footer>
 
-    <footer>&copy; 2025 FC 26 | Alle rechten voorbehouden</footer>
-  </body>
+</body>
 </html>
