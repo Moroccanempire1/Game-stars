@@ -1,7 +1,4 @@
 <?php
-// ========================
-// Jouw game reviews
-// ========================
 $myGames = [
     "FC26" => [
         "title" => "FC 26",
@@ -16,13 +13,8 @@ $myGames = [
         "genre" => "Racing / Sport",
         "description" => "Race met je auto en scoor epische goals in een futuristisch stadion.",
         "platform" => "PC, PlayStation, Xbox, Switch"
-    ]
-];
-
-// ========================
-// Klasgenoot game reviews
-// ========================
-$classmateGames = [
+    ],
+[
     "Valorant" => [
         "title" => "Valorant",
         "pegi" => "16",
@@ -37,11 +29,9 @@ $classmateGames = [
         "description" => "Bouw en strijd tegen andere spelers in een kleurrijke wereld.",
         "platform" => "PC, PlayStation, Xbox, Switch, Mobile"
     ]
+    ]
 ];
 
-// Welke set tonen? ?player=me of ?player=classmate
-$player = $_GET['player'] ?? 'me';
-$gamesToShow = $player === 'classmate' ? $classmateGames : $myGames;
 ?>
 
 <!DOCTYPE html>
@@ -52,8 +42,8 @@ $gamesToShow = $player === 'classmate' ? $classmateGames : $myGames;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameStars - Game Reviews</title>
     <link rel="stylesheet" href="./styling/style.css">
-    <script defer src="./lib/game-review.js"></script>
-    <script defer src="./lib/script.js"></script>
+    <script defer src="lib/gamereview.js"></script>
+    <script defer src="lib/script.js"></script>
 </head>
 <body>
 

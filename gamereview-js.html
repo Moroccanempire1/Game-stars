@@ -51,8 +51,22 @@
         platforms: "PC, PlayStation, Xbox, Switch",
         beschrijving: "Rocket League combineert voetbal met snelle auto’s in spannende multiplayer matches."
     };
+    const game3 = {
+        titel: "Valorant",
+        genre: "Shooter / Tactical",
+        pegi: "16+",
+        platforms: "PC",
+        beschrijving: "Valorant is een tactische shooter met unieke agenten en strategische gameplay."
+    };
+    const game4 = {
+        titel: "Fortnite",
+        genre: "Battle Royale / Sandbox",
+        pegi: "12+",
+        platforms: "PC, PlayStation, Xbox, Switch, Mobile",
+        beschrijving: "Fortnite is een populaire battle royale game met bouwmechanieken en regelmatige updates."
+    };
 
-    let keuze = prompt("Welke game wil je zien? (1 = FC 26, 2 = Rocket League)");
+    let keuze = prompt("Welke game wil je zien? (1 = FC 26, 2 = Rocket League, 3 = Valorant, 4 = Fortnite)", "1");
 
     let game;
     switch(keuze) {
@@ -62,12 +76,18 @@
         case "2":
             game = game2;
             break;
+        case "3":
+            game = game3;
+            break;
+        case "4":
+            game = game4;
+            break;
         default:
             game = game1;
             console.log("Ongeldige keuze, standaard FC 26 getoond.");
     }
 
-    // Toon game info op pagina
+
     const container = document.getElementById("gameContainer");
     container.innerHTML = `
         <h2>${game.titel}</h2>
@@ -77,7 +97,6 @@
         <p>${game.beschrijving}</p>
     `;
 
-    // Toon in console
     console.log("Getoonde game:", game.titel);
 </script>
 
