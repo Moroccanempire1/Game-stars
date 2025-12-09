@@ -5,33 +5,47 @@
     <meta name="author" content="Anass Maliki">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameStars - Home</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styling/style.css">
+
+    <!-- JavaScript -->
     <script defer src="lib/script.js"></script>
 </head>
+
 <body>
 <header>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="images/Gamestars logo.png" alt="GameStars Logo"></a>
+            <a href="index.html">
+                <img src="images/gamestars-logo.png" alt="GameStars Logo">
+            </a>
         </div>
+
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="games.html">Games</a></li>
             <li><a href="merchandise.html">Merchandise</a></li>
             <li><a href="contact.html">Contact</a></li>
+
+            <!-- PHP werkt niet op GitHub Pages -->
             <li><a href="gamereview.php">Review PHP</a></li>
+
             <li><a href="gamereview-js.html">Review JS</a></li>
         </ul>
+
         <div class="nav-right">
             <form id="searchForm">
                 <input type="text" placeholder="Zoek pagina..." class="search-input" id="searchInput">
                 <button type="submit">Zoek</button>
             </form>
+
             <button id="darkmodeBtn">Dark mode</button>
         </div>
     </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
     <div class="hero-overlay">
         <h1>Welkom bij GameStars</h1>
@@ -40,23 +54,39 @@
     </div>
 </section>
 
+<!-- TOP GAMES -->
 <section class="top-games">
     <h2>Top 3 Games</h2>
+
     <div class="game-cards">
-        <div class="card"><img src="images/fc26.avif" alt="FC 26"><h3>FC 26</h3></div>
-        <div class="card"><img src="images/Rocket_League_coverart.jpg" alt="Rocket League"><h3>Rocket League</h3></div>
-        <div class="card"><img src="images/valorant.jpeg" alt="Valorant"><h3>Valorant</h3></div>
+        <div class="card">
+            <img src="images/fc26.avif" alt="FC 26">
+            <h3>FC 26</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/rocket_league_coverart.jpg" alt="Rocket League">
+            <h3>Rocket League</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/valorant.jpeg" alt="Valorant">
+            <h3>Valorant</h3>
+        </div>
     </div>
 </section>
 
+<!-- SOCIAL -->
 <section class="social">
     <h2>Volg ons</h2>
     <p>Email: info@gamestars.nl</p>
     <p>Instagram: @GameStars</p>
 </section>
 
+<!-- FOOTER -->
 <footer>
     <p>GameStars &copy; 2025 – Stuur ons een bericht voor vragen of suggesties!</p>
 </footer>
+
 </body>
 </html>

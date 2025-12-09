@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameStars - Game Review JS</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styling/style.css">
+
+    <!-- Script voor darkmode & search -->
+    <script defer src="lib/script.js"></script>
 </head>
+
 <body>
 <header>
     <nav class="navbar">
         <div class="logo">
             <a href="index.html">
-                <img src="images/Gamestars logo.png" alt="GameStars Logo">
+                <img src="images/gamestars-logo.png" alt="GameStars Logo">
             </a>
         </div>
+
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="games.html">Games</a></li>
@@ -21,6 +28,7 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="gamereview.php">Review PHP</a></li>
         </ul>
+
         <div class="nav-right">
             <button id="darkmodeBtn">Dark mode</button>
         </div>
@@ -29,6 +37,7 @@
 
 <main class="games-page">
     <h1>Game Review</h1>
+
     <div id="gameContainer" class="game-item"></div>
 
     <a href="index.html" class="hero-btn" style="margin-top:20px; display:inline-block;">Terug naar Home</a>
@@ -50,6 +59,7 @@
         platforms: "PC, PlayStation, Xbox, Switch",
         beschrijving: "Rocket League combineert voetbal met snelle auto’s in spannende multiplayer matches."
     };
+
     const game3 = {
         titel: "Valorant",
         genre: "Shooter / Tactical",
@@ -57,6 +67,7 @@
         platforms: "PC",
         beschrijving: "Valorant is een tactische shooter met unieke agenten en strategische gameplay."
     };
+
     const game4 = {
         titel: "Fortnite",
         genre: "Battle Royale / Sandbox",
@@ -68,7 +79,7 @@
     let keuze = prompt("Welke game wil je zien? (1 = FC 26, 2 = Rocket League, 3 = Valorant, 4 = Fortnite)", "1");
 
     let game;
-    switch(keuze) {
+    switch (keuze) {
         case "1":
             game = game1;
             break;
@@ -86,7 +97,6 @@
             console.log("Ongeldige keuze, standaard FC 26 getoond.");
     }
 
-
     const container = document.getElementById("gameContainer");
     container.innerHTML = `
         <h2>${game.titel}</h2>
@@ -95,13 +105,14 @@
         <p><strong>Platforms:</strong> ${game.platforms}</p>
         <p>${game.beschrijving}</p>
     `;
-
-    console.log("Getoonde game:", game.titel);
 </script>
+
+<!-- Extra JS file (als je deze gebruikt) -->
 <script src="lib/gamereview.js"></script>
 
 <footer>
     <p>GameStars &copy; 2025 – Bekijk meer reviews of ga terug naar Home!</p>
 </footer>
+
 </body>
 </html>
