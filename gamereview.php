@@ -7,6 +7,7 @@ $myGames = [
         "description" => "Speel in je eigen team en verbeter je skills op het veld.",
         "platform" => "PC, PlayStation, Xbox"
     ],
+
     "RocketLeague" => [
         "title" => "Rocket League",
         "pegi" => "7",
@@ -14,7 +15,7 @@ $myGames = [
         "description" => "Race met je auto en scoor epische goals in een futuristisch stadion.",
         "platform" => "PC, PlayStation, Xbox, Switch"
     ],
-[
+
     "Valorant" => [
         "title" => "Valorant",
         "pegi" => "16",
@@ -22,6 +23,7 @@ $myGames = [
         "description" => "Tactische shooter waarin teamwork en strategie centraal staan.",
         "platform" => "PC"
     ],
+
     "Fortnite" => [
         "title" => "Fortnite",
         "pegi" => "12",
@@ -29,9 +31,10 @@ $myGames = [
         "description" => "Bouw en strijd tegen andere spelers in een kleurrijke wereld.",
         "platform" => "PC, PlayStation, Xbox, Switch, Mobile"
     ]
-    ]
 ];
 
+$player = $_GET['player'] ?? 'me'; 
+$gamesToShow = $myGames;
 ?>
 
 <!DOCTYPE html>
