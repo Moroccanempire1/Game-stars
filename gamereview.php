@@ -1,4 +1,5 @@
 <?php
+// Alle games
 $myGames = [
     "FC26" => [
         "title" => "FC 26",
@@ -14,7 +15,6 @@ $myGames = [
         "description" => "Race met je auto en scoor epische goals in een futuristisch stadion.",
         "platform" => "PC, PlayStation, Xbox, Switch"
     ],
-[
     "Valorant" => [
         "title" => "Valorant",
         "pegi" => "16",
@@ -29,11 +29,14 @@ $myGames = [
         "description" => "Bouw en strijd tegen andere spelers in een kleurrijke wereld.",
         "platform" => "PC, PlayStation, Xbox, Switch, Mobile"
     ]
-    ]
 ];
 
-?>
+// Speler bepalen via URL (?player=me of ?player=classmate)
+$player = $_GET['player'] ?? 'me';
 
+// Voor nu: alle games tonen
+$gamesToShow = $myGames;
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -50,7 +53,9 @@ $myGames = [
 <header>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="./images/logo gamstars.png" alt="GameStars Logo"></a>
+            <a href="index.html">
+                <img src="./images/gamestars-logo.png" alt="GameStars Logo">
+            </a>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -68,7 +73,7 @@ $myGames = [
 <main class="game-review-page">
     <h1>Game Reviews - <?php echo ucfirst($player); ?></h1>
 
-    <?php foreach($gamesToShow as $game): ?>
+    <?php foreach ($gamesToShow as $game): ?>
         <div class="review-card">
             <h2><?php echo $game['title']; ?> (PEGI <?php echo $game['pegi']; ?>)</h2>
             <p><strong>Genre:</strong> <?php echo $game['genre']; ?></p>
@@ -78,7 +83,7 @@ $myGames = [
     <?php endforeach; ?>
 
     <div class="switch-links">
-        <a href="?player=me">Mijn reviews</a> | 
+        <a href="?player=me">Mijn reviews</a> |
         <a href="?player=classmate">Reviews klasgenoot</a>
     </div>
 </main>

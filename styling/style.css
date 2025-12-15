@@ -376,6 +376,12 @@ footer {
     box-shadow: 0 3px 6px rgba(255, 255, 255, 0.05);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ===== Merchandise pagina ===== */
 .merch-page {
     padding: 40px 20px;
@@ -524,5 +530,67 @@ footer {
 }
 
 .darkmode .switch-links a {
+    color: #1E90FF;
+}
+
+/* ===== Game Review pagina (GEFIXT) ===== */
+.game-review-page {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.review-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0074FF;
+}
+
+.review-card p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.switch-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.switch-links a {
+    text-decoration: none;
+    color: #0074FF;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.switch-links a:hover {
+    color: #005bb5;
+}
+
+/* Darkmode */
+.darkmode .game-review-page {
+    background: #111;
+}
+
+.darkmode .review-card {
+    background: #222;
+    color: #fff;
+}
+
+.darkmode .review-card h2 {
     color: #1E90FF;
 }
