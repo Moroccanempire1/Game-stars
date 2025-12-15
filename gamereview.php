@@ -8,6 +8,7 @@ $myGames = [
         "description" => "Speel in je eigen team en verbeter je skills op het veld.",
         "platform" => "PC, PlayStation, Xbox"
     ],
+
     "RocketLeague" => [
         "title" => "Rocket League",
         "pegi" => "7",
@@ -22,6 +23,7 @@ $myGames = [
         "description" => "Tactische shooter waarin teamwork en strategie centraal staan.",
         "platform" => "PC"
     ],
+
     "Fortnite" => [
         "title" => "Fortnite",
         "pegi" => "12",
