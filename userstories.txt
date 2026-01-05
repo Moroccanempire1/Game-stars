@@ -1,0 +1,15 @@
+User stories – Game Review PHP pagina
+1. Als bezoeker wil ik mijn leeftijd kunnen invullen zodat de website kan controleren of ik oud genoeg ben voor de PEGI-rating.
+2. Als bezoeker wil ik één game review zien op basis van een gekozen titel zodat ik snel kan wisselen tussen games.
+3. Als developer wil ik met een switch-statement bepalen welke game getoond wordt zodat ik aan de opdracht-eis voldoe.
+4. Als bezoeker wil ik genres, platformen, foto’s en ratings zien zodat ik een volledig overzicht heb.
+5. Als bezoeker wil ik een embedded YouTube trailer zien zodat ik de game kan bekijken.
+6. Als bezoeker wil ik een duidelijke melding krijgen als ik te jong ben zodat ik weet waarom ik de info niet zie.
+
+User stories – Game Review JS pagina
+1. Als bezoeker wil ik een game kunnen kiezen via een dropdown zodat ik makkelijk kan wisselen.
+2. Als bezoeker wil ik mijn leeftijd invullen zodat de website PEGI kan controleren.
+3. Als bezoeker wil ik een melding op de pagina als ik te jong ben zodat ik weet waarom het niet getoond wordt.
+4. Als bezoeker wil ik genres, platformen, foto’s en ratings zien zodat ik alle info heb.
+5. Als bezoeker wil ik de gemiddelde rating zien zodat ik een snelle score heb.
+6. Als bezoeker wil ik een YouTube trailer embedded kunnen afspelen zodat ik meteen gameplay kan kijken.
