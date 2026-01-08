@@ -25,3 +25,15 @@ User stories – Slideshow (JavaScript)
 1. Als bezoeker wil ik een slideshow zien met game highlights zodat ik snel verschillende games kan bekijken.
 2. Als bezoeker wil ik op vorige/volgende kunnen klikken zodat ik zelf door de slides kan gaan.
 3. Als bezoeker wil ik dat de slideshow automatisch doorschuift zodat de pagina levendig blijft.
+
+User stories – Latest Reviews
+1. Als bezoeker wil ik de laatste 4 reviews kunnen bekijken zodat ik snel nieuwe games ontdek.
+2. Als bezoeker wil ik maar 1 review tegelijk zien (slideshow) zodat het overzichtelijk blijft.
+3. Als bezoeker wil ik genoeg tijd krijgen per slide zodat ik alle informatie kan lezen.
+4. Als bezoeker wil ik kunnen klikken op vorige/volgende zodat ik zelf kan navigeren.
+5. Als bezoeker wil ik PEGI 16+ reviews apart kunnen zien zodat volwassen content duidelijk gescheiden is.
+6. Als bezoeker wil ik ook 1 jongeren-review zien zodat er content is voor onder de 16.
+
+User stories – Navigatie (hele site)
+1. Als bezoeker wil ik vanaf elke pagina naar alle andere pagina’s kunnen via de navbar.
+2. Als bezoeker wil ik een consistent design (1 CSS) zodat de website professioneel voelt.
