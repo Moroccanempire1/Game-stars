@@ -13,3 +13,15 @@ User stories – Game Review JS pagina
 4. Als bezoeker wil ik genres, platformen, foto’s en ratings zien zodat ik alle info heb.
 5. Als bezoeker wil ik de gemiddelde rating zien zodat ik een snelle score heb.
 6. Als bezoeker wil ik een YouTube trailer embedded kunnen afspelen zodat ik meteen gameplay kan kijken.
+
+User stories – Game Review 4 (PHP)
+1. Als bezoeker wil ik via de URL (GET) kunnen wisselen tussen games zodat ik snel een andere review kan bekijken.
+2. Als bezoeker wil ik mijn leeftijd invullen zodat ik alleen content zie als ik oud genoeg ben (PEGI-check).
+3. Als bezoeker wil ik een review kunnen plaatsen met naam, beschrijving en rating zodat ik mijn mening kan delen.
+4. Als bezoeker wil ik na het verzenden mijn review op de pagina terugzien op een logische plek.
+5. Als bezoeker wil ik dat de gemiddelde rating wordt bijgewerkt op basis van mijn rating zodat de score actueel blijft.
+
+User stories – Slideshow (JavaScript)
+1. Als bezoeker wil ik een slideshow zien met game highlights zodat ik snel verschillende games kan bekijken.
+2. Als bezoeker wil ik op vorige/volgende kunnen klikken zodat ik zelf door de slides kan gaan.
+3. Als bezoeker wil ik dat de slideshow automatisch doorschuift zodat de pagina levendig blijft.

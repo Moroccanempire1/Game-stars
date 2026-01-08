@@ -7,9 +7,7 @@
     <title>GameStars - Home</title>
     <link rel="stylesheet" href="styling/style.css">
     <script defer src="lib/script.js"></script>
-       <!-- UITGEZET omdat PHP al reviews toont -->
-    <!-- <script defer src="lib/gamereview.js"></script> -->
-
+    <script defer src="lib/slideshow.js"></script>
 </head>
 
 <body>
@@ -40,6 +38,7 @@
         </div>
     </nav>
 </header>
+
 <section class="hero">
     <div class="hero-overlay">
         <h1>Welkom bij GameStars</h1>
@@ -47,6 +46,7 @@
         <a href="games.html" class="hero-btn">Bekijk games</a>
     </div>
 </section>
+
 <section class="top-games">
     <h2>Top 3 Games</h2>
 
@@ -67,11 +67,31 @@
         </div>
     </div>
 </section>
+
+<!-- ✅ SLIDESHOW (JS) -->
+<section class="top-games">
+    <h2>Slideshow – Game Highlights</h2>
+
+    <div class="review-card" style="text-align:center;">
+        <div id="slideshow" style="max-width:900px; margin:0 auto;">
+            <img id="slideImage" src="images/fc26.avif" alt="Slide" style="border-radius:12px; width:100%; max-height:420px; object-fit:cover;">
+            <h3 id="slideTitle" style="margin:14px 0 6px;">FC 26</h3>
+            <p id="slideText" style="margin:0;">Nieuwe voetbal ervaring met Ultimate Team & Career.</p>
+
+            <div style="margin-top:14px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+                <button id="prevSlide" class="order-btn" style="width:auto;">⬅ Vorige</button>
+                <button id="nextSlide" class="order-btn" style="width:auto;">Volgende ➡</button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="social">
     <h2>Volg ons</h2>
     <p>Email: info@gamestars.nl</p>
     <p>Instagram: @GameStars</p>
 </section>
+
 <footer>
     <p>GameStars &copy; 2025 – Stuur ons een bericht voor vragen of suggesties!</p>
 </footer>
