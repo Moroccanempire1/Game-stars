@@ -14,7 +14,7 @@
   <!-- Globale JS: darkmode + zoeken -->
   <script defer src="lib/script.js"></script>
 
-  <!-- (Optioneel) slideshow op home, als je die gebruikt -->
+  <script defer src="lib/slideshow.js"></script>
   <!-- <script defer src="lib/slideshow.js"></script> -->
 </head>
 
@@ -93,6 +93,26 @@
       </div>
     </div>
   </section>
+
+  <!-- ✅ SLIDESHOW (JS) -->
+<section class="top-games">
+  <h2>Slideshow – Game Highlights</h2>
+
+  <div class="review-card" style="text-align:center;">
+    <div id="slideshow" style="max-width:900px; margin:0 auto;">
+      <img id="slideImage" src="images/fc26.avif" alt="Slide"
+        style="border-radius:12px; width:100%; max-height:420px; object-fit:cover;">
+      <h3 id="slideTitle" style="margin:14px 0 6px;">FC 26</h3>
+      <p id="slideText" style="margin:0;">Nieuwe voetbal ervaring met Ultimate Team & Career.</p>
+
+      <div style="margin-top:14px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+        <button id="prevSlide" class="order-btn" style="width:auto;">⬅ Vorige</button>
+        <button id="nextSlide" class="order-btn" style="width:auto;">Volgende ➡</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- SOCIAL / CONTACT INFO -->
   <section class="social">

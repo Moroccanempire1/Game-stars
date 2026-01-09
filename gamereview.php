@@ -1,17 +1,10 @@
-// 1) Multidimensionale associatieve array met games (data laag)
-// 2) GET variabelen: game + age (wisselen via URL)
-// 3) switch-statement: kiest 1 game uit de array
-// 4) PEGI check: alleen tonen als age >= pegi
-// 5) Form verwerken (POST): naam + textarea + radio rating 1-5
-// 6) Nieuwe gemiddelde rating: (oude avg + nieuwe rating)/2
-// 7) Output in HTML met interpolatie + loops
 
 
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// 1) Eén array met 4 games
+// 1) Eén array met 4 games 
 $games = [
     "FC 26" => [
         "title" => "FC 26",
