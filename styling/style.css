@@ -1,3 +1,15 @@
+/* ==========================
+   style.css (1 CSS voor alles)
+   ==========================
+   - body + darkmode basis
+   - navbar + links
+   - hero section
+   - cards & grids (games/merch)
+   - contact form styling
+   - review cards (PHP/JS/latest)
+*/
+
+
 /* ===== Algemeen ===== */
 body {
     font-family: Arial, sans-serif;
@@ -508,7 +520,7 @@ img {
 }
 
 .switch-links {
-   text-align: center;
+    text-align: center;
     margin-top: 30px;
 }
 

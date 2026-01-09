@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Anass Maliki">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameStars - Home</title>
-    <link rel="stylesheet" href="styling/style.css">
-    <script defer src="lib/script.js"></script>
-    <script defer src="lib/slideshow.js"></script>
+  <!-- Basis meta info -->
+  <meta charset="UTF-8" />
+  <meta name="author" content="Anass Maliki" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GameStars - Home</title>
+
+  <!-- 1 CSS voor de hele website -->
+  <link rel="stylesheet" href="styling/style.css" />
+
+  <!-- Globale JS: darkmode + zoeken -->
+  <script defer src="lib/script.js"></script>
+
+  <!-- (Optioneel) slideshow op home, als je die gebruikt -->
+  <!-- <script defer src="lib/slideshow.js"></script> -->
 </head>
 
 <body>
-<header>
+  <!-- NAVBAR: staat op alle pagina’s zodat alles aan elkaar gelinkt is -->
+  <header>
     <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/gamestars-logo.png" alt="GameStars Logo">
-            </a>
-        </div>
+      <!-- Logo linkt terug naar home -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/gamestars-logo.png" alt="GameStars Logo" />
+        </a>
+      </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="merchandise.html">Merchandise</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="gamereview.php">Review PHP</a></li>
-            <li><a href="gamereview-js.html">Review JS</a></li>
-            <li><a href="latest-reviews.php">Latest Reviews</a></li>
-        </ul>
+      <!-- Navigatie links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="contact.html">Contact</a></li>
 
-        <div class="nav-right">
-            <form id="searchForm">
-                <input type="text" placeholder="Zoek pagina..." class="search-input" id="searchInput">
-                <button type="submit">Zoek</button>
-            </form>
+        <!-- Review pagina’s -->
+        <li><a href="gamereview.php">Review PHP</a></li>
+        <li><a href="gamereview-js.html">Review JS</a></li>
 
-            <button id="darkmodeBtn">Dark mode</button>
-        </div>
+        <!-- Eindopdracht pagina -->
+        <li><a href="latest-reviews.php">Latest Reviews</a></li>
+      </ul>
+
+      <!-- Rechts: zoek + darkmode -->
+      <div class="nav-right">
+        <!-- Zoekformulier: wordt verwerkt door lib/script.js -->
+        <form id="searchForm">
+          <input
+            type="text"
+            placeholder="Zoek pagina..."
+            class="search-input"
+            id="searchInput"
+          />
+          <button type="submit">Zoek</button>
+        </form>
+
+        <!-- Darkmode knop: toggled class op body -->
+        <button id="darkmodeBtn">Dark mode</button>
+      </div>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
+  <!-- HERO: grote banner met call-to-action -->
+  <section class="hero">
     <div class="hero-overlay">
-        <h1>Welkom bij GameStars</h1>
-        <p>Bekijk de nieuwste games, updates & merchandise.</p>
-        <a href="games.html" class="hero-btn">Bekijk games</a>
+      <h1>Welkom bij GameStars</h1>
+      <p>Bekijk de nieuwste games, updates & merchandise.</p>
+      <a href="games.html" class="hero-btn">Bekijk games</a>
     </div>
-</section>
+  </section>
 
-<section class="top-games">
+  <!-- TOP GAMES: simpele cards -->
+  <section class="top-games">
     <h2>Top 3 Games</h2>
 
     <div class="game-cards">
-        <div class="card">
-            <img src="images/fc26.avif" alt="FC 26">
-            <h3>FC 26</h3>
-        </div>
+      <div class="card">
+        <img src="images/fc26.avif" alt="FC 26" />
+        <h3>FC 26</h3>
+      </div>
 
-        <div class="card">
-            <img src="images/rocket_league_coverart.jpg" alt="Rocket League">
-            <h3>Rocket League</h3>
-        </div>
+      <div class="card">
+        <img src="images/rocket_league_coverart.jpg" alt="Rocket League" />
+        <h3>Rocket League</h3>
+      </div>
 
-        <div class="card">
-            <img src="images/valorant.jpeg" alt="Valorant">
-            <h3>Valorant</h3>
-        </div>
+      <div class="card">
+        <img src="images/valorant.jpeg" alt="Valorant" />
+        <h3>Valorant</h3>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- ✅ SLIDESHOW (JS) -->
-<section class="top-games">
-    <h2>Slideshow – Game Highlights</h2>
-
-    <div class="review-card" style="text-align:center;">
-        <div id="slideshow" style="max-width:900px; margin:0 auto;">
-            <img id="slideImage" src="images/fc26.avif" alt="Slide" style="border-radius:12px; width:100%; max-height:420px; object-fit:cover;">
-            <h3 id="slideTitle" style="margin:14px 0 6px;">FC 26</h3>
-            <p id="slideText" style="margin:0;">Nieuwe voetbal ervaring met Ultimate Team & Career.</p>
-
-            <div style="margin-top:14px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
-                <button id="prevSlide" class="order-btn" style="width:auto;">⬅ Vorige</button>
-                <button id="nextSlide" class="order-btn" style="width:auto;">Volgende ➡</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="social">
+  <!-- SOCIAL / CONTACT INFO -->
+  <section class="social">
     <h2>Volg ons</h2>
     <p>Email: info@gamestars.nl</p>
     <p>Instagram: @GameStars</p>
-</section>
+  </section>
 
-<footer>
+  <!-- FOOTER -->
+  <footer>
     <p>GameStars &copy; 2025 – Stuur ons een bericht voor vragen of suggesties!</p>
-</footer>
+  </footer>
 </body>
 </html>

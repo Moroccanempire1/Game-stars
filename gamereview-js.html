@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GameStars - Review JS</title>
-  <link rel="stylesheet" href="styling/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameStars - Game Review JS</title>
+
+  <link rel="stylesheet" href="styling/style.css" />
+
+  <!-- Globale JS -->
   <script defer src="lib/script.js"></script>
-  <script defer src="/lib/gamereview.js"></script>
+
+  <!-- Review JS logic -->
+  <script defer src="lib/gamereview.js"></script>
 </head>
+
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/gamestars-logo.png" alt="GameStars Logo" />
+        </a>
+      </div>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html"><img src="images/gamestars-logo.png" alt="GameStars Logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gamereview.php">Review PHP</a></li>
+        <li><a href="gamereview-js.html">Review JS</a></li>
+        <li><a href="latest-reviews.php">Latest Reviews</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button id="darkmodeBtn">Dark mode</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="game-review-page">
+    <h1>Game Review (JS)</h1>
+
+    <!-- Form controls: leeftijd + select -->
+    <div class="review-card">
+      <label for="ageInput"><strong>Leeftijd:</strong></label>
+      <input id="ageInput" type="number" min="0" placeholder="bijv. 20" style="padding:8px; max-width:140px;" />
+
+      <label for="gameSelect" style="margin-top:12px;"><strong>Kies een game:</strong></label>
+      <select id="gameSelect" style="padding:8px; width:100%; max-width:360px;">
+        <!-- JS vult opties -->
+      </select>
+
+      <button id="showBtn" class="order-btn" style="width:auto; margin-top:14px;">Toon review</button>
     </div>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="merchandise.html">Merchandise</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="gamereview.php">Review PHP</a></li>
-      <li><a href="gamereview-js.html">Review JS</a></li>
-      <li><a href="latest-reviews.php">Latest Reviews</a></li>
+    <!-- Output: JS zet hier de review of “te jong” melding -->
+    <div id="output"></div>
 
-    </ul>
+    <a href="index.html" class="hero-btn" style="margin-top:20px; display:inline-block;">Terug naar Home</a>
+  </main>
 
-    <div class="nav-right">
-      <button id="darkmodeBtn">Dark mode</button>
-    </div>
-  </nav>
-</header>
-
-<main class="game-review-page">
-  <h1>Game Review (JS)</h1>
-
-  <div class="review-card">
-    <label for="ageInput"><strong>Leeftijd:</strong></label>
-    <input id="ageInput" type="number" min="0" placeholder="bijv. 20" style="padding:8px; max-width:140px;">
-
-    <label for="gameSelect" style="margin-top:12px;"><strong>Kies een game:</strong></label>
-    <select id="gameSelect" style="padding:8px; width:100%; max-width:360px;">
-      <!-- opties worden via JS gevuld -->
-    </select>
-
-    <button id="showBtn" class="order-btn" style="width:auto; margin-top:14px;">Toon review</button>
-  </div>
-
-  <div id="output"></div>
-
-  <a href="index.html" class="hero-btn" style="margin-top:20px; display:inline-block;">Terug naar Home</a>
-</main>
-
-<footer>
-  <p>GameStars &copy; 2025 – Bekijk meer reviews!</p>
-</footer>
-
+  <footer>
+    <p>GameStars &copy; 2025 – Bekijk meer reviews!</p>
+  </footer>
 </body>
 </html>
